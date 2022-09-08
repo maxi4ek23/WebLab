@@ -1,0 +1,12 @@
+@keyframes photo-radius {
+    0% {
+        border: 5px solid white;
+    }
+    50% {
+        border: 75px solid white;
+        border-radius: 10%;
+    }
+    100% {
+        border: 5px solid white;
+    }
+}

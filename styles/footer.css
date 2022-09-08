@@ -1,13 +1,10 @@
 .footer {
-    width: 1600px;
-    margin: 0 auto;
-    height: 17vh;
     background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);   
 }
 
 .footer-container {
-    max-width: 1120px;
-    height: 17vh;
+    width: 83vw;
+    height: 12vh;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -17,23 +14,35 @@
 .white-logo {
     margin-left: 2vw;
     cursor: pointer;
+    width: 15%;
 }
 
 .footer__unordered-list {
     display: flex;
+    width: 40vw;
+    justify-content: space-between;
 }
 
 .footer__list {
     color: white;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.1vw;
     text-decoration: none;
-}
-
-.footer__list:not(:last-child) {
-    margin-right: 170px;
 }
 
 .item {
     color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .white-logo {
+        width: 20vw;
+    }
+    .footer__list {
+        font-size: 3vw;
+    }
+
+    .footer__unordered-list {
+        width: 45vw;
+    }
 }
