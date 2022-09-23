@@ -4,120 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Document</title>
 </head>
 <body>
     <div class="wrapper">
-        <header>
-            <nav class="navbar">
-                <div class="navbar-container container">
-                    <input type="checkbox" name="" id="">
-                    <div class="hamburger-lines">
-                        <span class="line line1"></span>
-                        <span class="line line2"></span>
-                        <span class="line line3"></span>
-                    </div>
-                    <ul class="menu-items">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">Find a doctor</a></li>
-                        <li><a href="#food">Apps</a></li>
-                        <li><a href="#food-menu">Testimonials</a></li>
-                        <li><a href="#testimonials">About us</a></li>
-                    </ul>
-                    <img class="header__logo" src="img/trafalgarlogo.png" alt="">
-                </div>
-            </nav>
-        </header>
-        <main>
-            <section class="first-section">
-                <div class="first-section__container">
-                    <div class="download-section">
-                        <div class="download-section__info">
-                            <h1 class="title">Download our mobile apps</h1>
-                            <img class="rectangle" src="img/rectangle.png" alt="">
-                            <div class="title-description">Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely</div>
-                            <button class="download-section__btn btn">Download</button>
-                        </div>
-                        <img class="download-section__image" src="img/mainpicture.png" alt="">
-                    </div>
-                </div>
-            </section>
-            <section class="second-section">
-                <div class="second-section__container">
-                    <div class="article-section">
-                        <h2 class="article-section__title title">Check out our latest article</h2>
-                        <img class="article-section__rectangle rectangle" src="img/rectangle.png" alt="">
-                        <div class="column">
-                            <div class="column__item">
-                                <img class="column__img" src="img/article1.png" alt="">
-                                <h3 class="column__title">Disease detection, check up in the laboratory</h3>
-                                <div class="column__description">In this case, the role of the health laboratory is very important to do a disease detection...</div>
-                                <a class="read-more" href="">Read more</a>
-                            </div>
-                            <div class="column__item">
-                                <img class="column__img" src="img/article 2.png" alt="">
-                                <h3 class="column__title">Herbal medicines that are safe for consumption</h3>
-                                <div class="column__description">Herbal medicine is very widely used at this time because of its very good for your health...</div>
-                                <a class="read-more" href="">Read more</a>
-                            </div>
-                            <div class="column__item">
-                                <img class="column__img" src="img/article 3.png" alt="">
-                                <h3 class="column__title">Natural care for healthy facial skin</h3>
-                                <div class="column__description">A healthy lifestyle should start from now and also for your skin health. There are some...</div>
-                                <a class="read-more" href="">Read more</a>
-                            </div>
-                        </div>
-                        <button class="article-section_btn btn">View all</button>
-                    </div>
-                </div>
-            </section>
-            <section class="third-section">
-                <div class="third-section__container">
-                    <div class="coment-section">
-                        <h2 class="coment-section__title title">What our customer are saying</h2>
-                        <img class="coment-section__rectangle rectangle" src="img/white-line.png" alt="">
-                        <div class="profile">
-                            <div class="profile__intro">
-                                <img class="photo" src="img/profile.png" alt="">   
-                                <div>
-                                    <h3 class="profile__name">Edward Newgate</h3>
-                                    <div class="profile__job">Founder Circle</div>
-                                </div>
-                            </div>
-                            <div class="profile__qoute">“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”</div>
-                        </div>
-                    </div>
-                    <nav class="review__nav nav">
-                        <button class="review-button-arrow">
-                            <img src="img/left.png" alt="arrow left">
-                        </button>
-                        <ol>
-                            <li><button class="review-button-litte-blue" ></button></li>
-                            <li><button class="review-button-litte-blue"></button></li>
-                            <li><button class="review-button-litte-blue"></button></li>
-                            <li><button class="review-button-litte-blue"></button></li>
-                        </ol>
-                        <button class="review-button--arrow">
-                            <img src="img/right.png" alt="arrow right">
-                        </button>
+            <header class="header">
+                <div class="header_container container">
+                    <nav class="logo">
+                        <img class="img-item" src="./img/animal_logo.png" alt="">
+                        <div class="text-item">My AniMals</div>
                     </nav>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="footer-container">
-                <img class="white-logo" src="img/white-logo.png" alt="">
-                <nav class="footer__nav">
-                    <ul class="footer__unordered-list">
-                        <li class="footer__list"><a class="item" href="">Company</a></li>
-                        <li class="footer__list"><a class="item" href="">Region</a></li>
-                        <li class="footer__list"><a class="item" href="">Help</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </footer>
+            </header>
+            <main>
+                <div class="main_container container">
+                    <div class="main-part">
+                        <div class="left-side">
+                            <div class="create-animals">
+                                <form>
+                                    <h2 class="paragraph">Create animal card:</h2>
+                                    <div class="forms">
+                                        <label for="name-input">Name</label>
+                                        <input tabindex="1" id="name-input" type="text" placeholder="Cat or dog">
+                                    </div>
+                                    <div class="forms">
+                                        <label for="weight-input">Weight</label>
+                                        <input tabindex="2" id="weight-input" type="number" placeholder="Type weight">
+                                    </div>
+                                    <div class="forms">
+                                        <label for="description-input">Description</label><br>
+                                        <textarea tabindex="3" id="description-input" cols="30" rows="5"></textarea>
+                                    </div>
+                                    <button class="create-btn">Create</button>
+                                </form>
+                            </div>
+                            <div class="find-animals">
+                                <form>
+                                    <h2 class="paragraph">Find animals by name:</h2>
+                                    <div class="forms">
+                                        <label for="">Find</label>
+                                        <input tabindex="4" id="find" placeholder="Find by name" type="text">
+                                    </div>
+                                    <button type="button" class="button">Find</button>
+                                    <button type="button" class="button-red">Cancel</button>
+                                </form>
+                            </div>
+                            <div class="sort-by-weight">
+                                <h2 class="paragraph">Sort by weight</h2>
+                                <button id="sort-by-purity-asc-button" class="button-green" type="submit">Sort</button>
+                            </div>
+                            <div class="count-total-weight">
+                                <h2 id="total-paragraph" class="paragraph">Total weight: <p class="total-price-container"></p></h2>
+                                <button class="count-button">Total</button>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <ul id="animals-container" class="animals-container"></ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
     </div>
+    <script type="module" src="./js/index.js"></script>
 </body>
 </html>
