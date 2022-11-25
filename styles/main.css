@@ -1,0 +1,392 @@
+.firts-section {
+    width: 100%;
+}
+
+.first-section__container {
+    width: 83vw;
+    margin: 0 auto;
+}
+
+.download-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25.5vh;
+    margin-bottom: 25vh;
+}
+
+.download-section__info {
+    width: 25vw;
+}
+
+.download-section__info > *:not(:last-child) {
+    margin-bottom: 4vh;
+}
+
+.title {
+    font-size: 2.5vw;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+.title-description {
+    font-size: 1.2vw;
+    font-weight: 300;
+    color: #7D7987;
+}
+
+.rectangle {
+    width: 4vw;
+}
+
+.download-section__btn::after {
+    content: url(../img/Vector.png);
+    margin-left: 15px;
+}
+
+.btn {
+    width: 14vw;
+    height: 7vh;
+    border-radius: 2vw;
+    background-color: white;
+    border: 2px solid #458FF6;
+    font-size: 1.2vw;
+    color: #458FF6;
+    font-weight: 700;
+    transition: 0.7s;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .download-section__btn::after {
+        display: none;
+    }
+    .btn {
+        height: 6vh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .btn {
+        height: 5vh;
+    }
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px #1F1534;
+}
+
+.download-section__image {
+    width: 55%;
+}
+
+@media screen and (max-width: 1000px) {
+    .download-section {
+        flex-direction: column-reverse;
+        padding-top: 21vh;
+        margin-bottom: 18vh;
+    }
+    .download-section__image {
+        width: 100%;
+    }
+    .download-section__info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        font-size: 8vw;
+        text-align: center;
+        margin-top: 4vh;
+        letter-spacing: 2px;
+    }
+    .rectangle {
+        width: 13vw;
+        height: 0.1vh;
+    }
+    .title-description {
+        text-align: center;
+        font-size: 4vw;
+        line-height: 130%;
+        padding: 0 2vw;
+    }
+    .btn {
+        font-size: 4vw;
+        width: 35vw;
+        border-radius: 10vw;
+    }
+    .first-section__container {
+        width: 90%;
+    }
+}
+
+.second-section__container {
+    width: 83vw;
+    margin: 0 auto;
+}
+
+.article-section {
+    padding-bottom: 10vh;
+}
+
+.article-section> *:not(:last-child) {
+    margin-bottom: 5.5vh;
+}
+    
+.article-section__title {
+    text-align: center;
+}
+
+.article-section__rectangle {
+    display: block;
+    margin: 0 auto;
+}
+
+.column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column__item {
+    width: 24vw;
+    height: 70vh;
+    border-radius: 1.3vw;
+    overflow: hidden;
+    box-shadow: 6px #177cf7;
+    box-shadow: 2vw 6vh 5vh rgba(229, 233, 246, 0.4);
+}
+
+.column__item > :not(:first-child) {
+    margin: 0 2vw;
+    margin-top: 3vh;
+}
+
+.column__img {
+    width: 100%;
+    height: 48%;
+}
+
+.article-section_btn {
+    display: block;
+    margin: 0 auto;
+}
+
+.column__title {
+    font-weight: 700;
+    font-size: 1.38vw;
+    line-height: 120%;
+}
+
+.column__description {
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 160%;
+}
+
+.read-more {
+    font-weight: 600;
+    font-size: 1.1vw;
+    color: #4089ED;
+    display: block;
+    margin-top: 3vh;
+}
+
+.read-more::after {
+    content: url(../img/ctr.png);
+    margin-left: 1.2vw;
+}
+
+@media screen and (max-width: 1000px) {
+    .column {
+        flex-direction: column;
+
+    }
+
+    .column__item {
+        height: fit-content;
+        width: 100%;
+        border-radius: 4vw;
+        text-align: center;
+        padding-bottom: 2vh;
+        
+    }
+    
+    .column__item:not(:last-child) {
+        margin-bottom: 3vh;
+    }
+
+    .column__title {
+        font-size: 5.2vw;
+    }
+
+    .column__description {
+        font-size: 4vw;
+    }
+
+    .read-more {
+        font-size: 4.2vw;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1001px)  {
+    .column__item {
+        height: 60vh;
+    }
+}
+
+.third-section {
+    background-color: #F3F8FE;
+    padding-top: 18vh;
+    padding-bottom: 18vh;
+}
+
+.third-section__container {
+    width: 83vw;
+    margin: 0 auto;
+}
+
+.coment-section {
+    height: 62vh;
+    border: 2px solid black;
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    border-radius: 1.5vw;
+    padding-top: 8vh;
+}
+
+.coment-section__title {
+    text-align: center;
+    color: white;
+}
+
+.coment-section__rectangle {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 12vh;
+}
+
+.profile {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 65vw;
+}
+
+.profile__qoute {
+    width: 23vw;
+    font-weight: 300;
+    font-size: 1.1vw;
+    line-height: 160%;
+    color: white;
+    opacity: 0.9;
+}
+
+.profile__intro {
+    display: flex;
+    width: 25vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 9vw;
+    animation-name: photo-radius;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.profile__name {
+    font-weight: 700;
+    font-size: 1.38vw;
+    line-height: 120%;
+    color: white;
+}
+
+.profile__job {
+    font-weight: 300;
+    font-size: 1.1vw;
+    opacity: 0.9;
+    color: white;
+    line-height: 120%;
+}
+
+.review__nav{
+    margin-top: 5vh;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.review__nav>ol{
+    display: flex;
+    padding:0 4vw;
+}
+
+.review__nav>ol>li{
+    margin: 0.8vh 0.4vw;
+    display: flex;
+    align-self: center;
+}
+
+.review__nav> button{
+    align-self:center;
+}
+
+.review-button-litte-blue{
+    background-color: #5B9BF3;
+    border-radius: 50%; 
+    opacity: 0.3;
+    width: 10px;
+    height:10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .profile {
+        flex-direction: column;
+        
+    }
+
+    .coment-section {
+        height: fit-content;
+        padding: 4vh 0;
+    }
+
+    .profile {
+        width: 75vw;
+    }
+
+    .profile__intro {
+        width: 100%;
+    }
+
+    .coment-section__rectangle {
+        margin-bottom: 6vh;
+    }
+
+    .profile__name {
+        font-size: 5vw;
+    }
+
+    .profile__job {
+        font-size: 4vw;
+    }
+
+    .photo {
+        width: 25vw;
+    }
+
+    .profile__qoute {
+        width: 100%;
+        font-size: 4.2vw;
+        margin-top: 4vh;
+        text-align: center;
+    }
+
+    .third-section {
+        padding: 9vh 0;
+    }
+}
